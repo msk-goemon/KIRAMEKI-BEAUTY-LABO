@@ -18,6 +18,10 @@ a:hover {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 
 /* ヘッダーの設定 ***********************************************
 ********************************************************************/
@@ -98,6 +102,9 @@ header {
 
 .main__background {
   background-image: url('../image/main_img.jpg');/*メインイメージの設定*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fa7da3;
   height: 612px;/*メインの高さ設定*/
 }
 
@@ -121,6 +128,7 @@ header {
   margin-top: -10px;
   font-size: 122px;
   color: white;
+  text-shadow: 0px 12px 30px #fa7da3;
 }
 
 .main__title-sub {
@@ -194,14 +202,20 @@ header {
 
 /* メイン画像下の3つの要素の設定 */
 .main__benefits {
-  max-width: 420px;
-  margin-top: 48px;
-  margin-right: 236px;
-  margin-left: auto;
+  max-width: 1030px;
+  margin: 32px auto 0;
+  display: flex;  /* Flexbox を使用 */
+  justify-content: flex-end;  /* 右寄せ */
+  padding-right: 12px;  /* 右側のパディングを調整 */
+}
+
+
+.benefits__wrap {
+
 }
 
 .main__benefit {
-  max-width: 420px;
+  width: 420px;
   padding: 12px 0;
   border: 1px solid white;
   color: white;
@@ -966,12 +980,12 @@ header {
 
   /* 画像下の3つの四角コンテンツの設定 */
   .main__benefits {
-    max-width: 133px;
-    margin-right: 27px;
-    margin-top: 21px;
+    margin-right: 14px;
+    margin-top: 7px;
   }
 
   .main__benefit {
+    width: 133px;
     font-size: 18px;
     padding: 3px 0;
   }
