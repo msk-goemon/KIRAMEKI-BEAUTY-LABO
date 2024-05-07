@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.customer__voices').slick({
         infinite: true,   // 無限にスクロール
-        slidesToShow: 1,  // 一度に表示するスライド数
+        slidesToShow: 3,  // 一度に表示するスライド数
         slidesToScroll: 1, // 一度にスクロールするスライド数
         dots: true,       // ナビゲーションドットを表示
         arrows: false,
